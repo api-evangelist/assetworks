@@ -1,9 +1,27 @@
 aid: assetworks
 name: AssetWorks
-description: AssetWorks is a company surfaced as a portfolio company of battery-ventures and added to
-  the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment
-  pipeline.
+description: >-
+  AssetWorks is an enterprise fleet and asset management software company with more than 40 years
+  of history and over 1,000 customers across commercial and private fleets, government and public
+  works, and higher education. Its products include FleetFocus fleet and enterprise asset management
+  (EAM), Active Assets fixed-asset tracking, Recoup Ops surplus management, and Scan and Validate
+  mobile inventory management. AssetWorks sells on-premise and hosted enterprise software to large
+  fleet and facility operators; as of this profile it publishes no public developer portal, API
+  documentation, or self-serve API program. This repo is a company profile in the API Evangelist
+  network, backed by Battery Ventures.
 url: https://raw.githubusercontent.com/api-evangelist/assetworks/refs/heads/main/apis.yml
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://www.assetworks.com/wp-content/uploads/2023/06/cropped-AssetWorks-Gear-Icon-Graident-Red-Orange-192x192.png
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
@@ -12,12 +30,35 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
+- Fleet Management
+- Asset Management
+- Enterprise Asset Management
+- EAM
+- Fleet
+- Government
+- Higher Education
+- Fixed Assets
+- Software
 apis: []
+common:
+- type: DomainSecurity
+  url: security/assetworks-domain-security.yml
+- type: Website
+  url: https://www.assetworks.com
+- type: PrivacyPolicy
+  url: https://www.assetworks.com/privacy-policy/
+- type: Careers
+  url: https://www.assetworks.com/careers/
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
