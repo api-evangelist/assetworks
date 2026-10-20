@@ -1,5 +1,7 @@
 aid: assetworks
+
 name: AssetWorks
+
 description: >-
   AssetWorks is an enterprise fleet and asset management software company with more than 40 years
   of history and over 1,000 customers across commercial and private fleets, government and public
@@ -9,7 +11,9 @@ description: >-
   fleet and facility operators; as of this profile it publishes no public developer portal, API
   documentation, or self-serve API program. This repo is a company profile in the API Evangelist
   network, backed by Battery Ventures.
+
 url: https://raw.githubusercontent.com/api-evangelist/assetworks/refs/heads/main/apis.yml
+
 deliveryModel:
   model: unknown
   open_source: false
@@ -21,6 +25,7 @@ deliveryModel:
   - none
   generated: '2026-08-28'
   method: derived
+
 accessModel:
   pricing: unknown
   onboarding: unknown
@@ -32,16 +37,26 @@ accessModel:
   source: []
   generated: '2026-07-22'
   method: derived
+
 image: https://www.assetworks.com/wp-content/uploads/2023/06/cropped-AssetWorks-Gear-Icon-Graident-Red-Orange-192x192.png
+
 x-type: company
+
 x-source: vc-portfolio
+
 x-backed-by:
 - battery-ventures
-x-tier: stub
-x-tier-reason: portfolio-lead
+
+x-tier: profiled
+
+x-tier-reason: enrichment pass 2026-10-20 (local-v5; was portfolio-lead)
+
 specificationVersion: '0.23'
+
 created: '2026-07-17'
+
 modified: '2026-07-18'
+
 tags:
 - Company
 - Fleet Management
@@ -53,8 +68,20 @@ tags:
 - Higher Education
 - Fixed Assets
 - Software
-apis: []
+
+maintainers:
+- FN: Kin Lane
+  email: kin@apievangelist.com
+- FN: APIs.json
+  email: info@apis.io
+
 common:
+- type: Hosts
+  url: hosts/assetworks-hosts.yml
+- type: IntegrationEdges
+  url: integrations/assetworks-integration-edges.yml
+- type: Vendors
+  url: vendors/assetworks-vendors.yml
 - type: DomainSecurity
   url: security/assetworks-domain-security.yml
 - type: Website
@@ -63,13 +90,29 @@ common:
   url: https://www.assetworks.com/privacy-policy/
 - type: Careers
   url: https://www.assetworks.com/careers/
-maintainers:
-- FN: Kin Lane
-  email: kin@apievangelist.com
-- FN: APIs.json
-  email: info@apis.io
+- type: Blog
+  url: https://www.assetworks.com/eam/blog/2026-trends-to-boost-facility-management-efficiency/
+- type: Support
+  url: https://community.assetworks.com/hc/en-us
+  description: Customer community (Zendesk help center); redirects to a customer sign-in.
+
+apis: []
+
 x-enrichment:
-  date: '2026-07-19'
-  status: backfilled
-  pass: local-v1
-  note: backfilled from .gitignore signal + verified work evidence
+  date: '2026-10-20'
+  status: minimal
+  artifacts_added: 0
+  pass: local-v5
+
+x-coverage:
+  state: gated
+  reason: customer-only-docs
+  detail: AssetWorks publishes no developer portal or API docs; its only documentation host, community.assetworks.com (Zendesk), redirects every visitor to a customer sign-in, and sandbox.assetworks.com is a bare IIS default page.
+  evidence:
+  - url: https://community.assetworks.com/hc/en-us
+    status: 403
+  - url: https://sandbox.assetworks.com/
+    status: 200
+  - url: https://www.assetworks.com
+    status: 200
+  checked: '2026-10-20'
