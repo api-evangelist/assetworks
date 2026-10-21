@@ -40,3 +40,58 @@
     detected: '2026-10-15'
   status: not-a-workflow
   arazzo: null
+- slug: assetworks-gsa-multiple-award-schedule-mas
+  label: GSA Multiple Award Schedule (MAS)
+  partner_name: GSA Multiple Award Schedule (MAS)
+  category: federal procurement contract vehicle
+  type: register
+  channel: standard-directory
+  evidence: https://www.gsaelibrary.gsa.gov/ElibMain/contractorInfo.do?contractNumber=47QTCA19D00AF&executeQuery=YES
+  source: edge
+  relationship: standard-participant
+  contract_reference:
+    register: GSA eLibrary, Multiple Award Schedule (MAS) IT SIN contractor listings
+    standard: GSA Multiple Award Schedule (IT Large Category)
+    spec_file: null
+    role: gsa-mas-contract-holder
+    registered_name: ASSETWORKS USA INC
+    register_id: 47QTCA19D00AF
+    matched_domain: assetworks.com
+    matched_by: domain
+    domain_source: web-address
+    sins:
+    - 511210 (software licenses)
+    - 54151S (IT professional services)
+    contracts:
+    - 47QTCA19D00AF
+    signal_note: 'participation only: a MAS award is a federal contract vehicle (GSA pre-negotiated terms and pricing),
+      not a conformance test. SINs and contract numbers are context, never counted'
+    detected_by: sweep-us-federal-api-programs.py
+    detected: '2026-10-21'
+  status: not-a-workflow
+  arazzo: null
+- slug: assetworks-uk-g-cloud-14-digital-marketplace
+  label: UK G-Cloud 14 (Digital Marketplace)
+  partner_name: UK G-Cloud 14 (Digital Marketplace)
+  category: UK public-sector procurement framework
+  type: marketplace
+  marketplace: g-cloud
+  channel: distribution
+  evidence: https://www.applytosupply.digitalmarketplace.service.gov.uk/g-cloud-14/supplier/720389
+  source: edge
+  relationship: distribution-channel
+  contract_reference:
+    register: UK G-Cloud 14 supplier list (Digital Marketplace)
+    spec_file: null
+    role: g-cloud-supplier
+    registered_name: GOASSETWORKS LIMITED
+    register_id: '720389'
+    matched_domain: assetworks.com
+    matched_by: domain
+    domain_source: contact-email
+    signal_note: a framework award is distribution (selling to the public sector), not an integration; kept out
+      of position shares
+    detected_by: sweep-uk-g-cloud-suppliers.py
+    detected: '2026-10-21'
+  status: not-a-workflow
+  arazzo: null
